@@ -1,4 +1,4 @@
-FROM python:3.7.4-slim
+FROM python:3-alpine
 ADD ./requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache-dir -q -r /tmp/requirements.txt
 ADD . /opt/app/
